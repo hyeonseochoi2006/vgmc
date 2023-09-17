@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body{
@@ -29,7 +30,12 @@ body::before {
     width: 400px; position: relative;
     margin-top: 20px;
 }
+.int-area2{
+    width: 400px; position: relative;
+    margin-top: 20px;
+}
 .int-area:first-child{margin-top: 0;}
+.int-area2:first-child{margin-top: 0;}
 .int-area input{
     width: 100%;
     padding: 20px 10px 10px;
@@ -39,6 +45,15 @@ body::before {
     font-size: 18px; color: #fff;
     outline: none;
 }
+.int-area2 input{
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #fff;
+    font-size: 18px; color: #fff;
+    outline: none;}
+
 .int-area label{
     position: absolute;
     left: 10px;
@@ -47,19 +62,36 @@ body::before {
     color: #999;
     transition: all .5s ease;
 }
+.int-area2 label{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 18px;
+    color: #999;
+    transition: all .5s ease;
+}
+
 
 .int-area input:focus + label{
     top: -2px;
-    font-size: 13px;color: #166cea;
+    font-size: 13px;color: #00DFA2;
+}
+.int-area2 input:focus + label{
+    top: -2px;
+    font-size: 13px;color: #00DFA2;
 }
 .int-area input:valid + label {
     top: -2px;
-    font-size: 13px;color: #166cea;
+    font-size: 13px;color: #00DFA2;
+}
+.int-area2 input:valid + label {
+    top: -2px;
+    font-size: 13px;color: #00DFA2;
 }
 .btn-area{margin-top: 30px; padding-bottom: 40px;}
 
 .btn-area button{   width: 100%; height: 50px;
-    background: #166cea;
+    background: #00DFA2;
     color: #fff;
     font-size: 20px;
     border: none;
@@ -72,16 +104,17 @@ button:hover{
     cursor: pointer;}
 
 #feedbackSentMessage{
-    font-size: 18px;
-    color: rgb(0, 255, 0);
+    font-size: 30px;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 
 .btn-10{
     font-size: 15px;
     padding: 5px 20px;
-    margin-top: 10px;
-    border: 2px solid #166cea;
+    margin-top: 30px;
+    border: 2px solid #A2FF86;
     background-color: transparent;
     border-radius:25px ;
     color: white;
@@ -111,7 +144,7 @@ button:hover{
     transform: translateY(-100%);
 }
 .btn-10:hover{
-    color: #166cea;
+    color: #A2FF86;
 }
 
 

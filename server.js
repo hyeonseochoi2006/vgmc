@@ -33,8 +33,8 @@ app.post('/submit-feedback', (req, res) => {
 
   const mailOptions = {
     from: 'chuihenxe123@gmail.com', // 발신자 이메일 주소
-    to: 'hyeonseoalex@gmail.com', // 수신자 이메일 주소 (개발자 이메일)
-    subject: '피드백 제출', // 이메일 제목
+    to: 'vgmcyouthcouncil@gmail.com', // 수신자 이메일 주소 (개발자 이메일)
+    subject: '쪽지 제출', // 이메일 제목
     text: `이름: ${name}\n메시지: ${message}`, // 이메일 내용
   };
 
