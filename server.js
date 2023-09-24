@@ -13,8 +13,8 @@ app.use(express.static('public'));
 const emailConfig = {
   service: "gmail", // 이메일 서비스 (Gmail 사용)
   auth: {
-    user: "chuihenxe123@gmail.com", // 발신자 이메일 주소
-    pass: "gxojeosafbnbfntq", // 발신자 이메일 계정의 암호 (앱 비밀번호를 사용해야 할 수도 있음)
+    user: "vgmcsent@gmail.com", // 발신자 이메일 주소
+    pass: "gcmddomkzhdxhiib", // 발신자 이메일 계정의 암호 (앱 비밀번호를 사용해야 할 수도 있음)
   },
 };
 
@@ -32,7 +32,7 @@ app.post('/submit-feedback', (req, res) => {
   const transporter = nodemailer.createTransport(emailConfig);
 
   const mailOptions = {
-    from: 'chuihenxe123@gmail.com', // 발신자 이메일 주소
+    from: 'vgmcsent@gmail.com', // 발신자 이메일 주소
     to: 'vgmcyouthcouncil@gmail.com', // 수신자 이메일 주소 (개발자 이메일)
     subject: '쪽지 제출', // 이메일 제목
     text: `이름: ${name}\n메시지: ${message}`, // 이메일 내용
