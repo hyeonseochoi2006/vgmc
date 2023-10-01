@@ -11,30 +11,39 @@ body{
     background: url(./sunday.jpg) no-repeat center;
     background-size: 100%;
     background-size: cover;
-
+    position: relative;
 }
 body::before {
     content: "";
-    position: absolute; z-index: 1;
-    top: 0;right: 0;bottom: 0;left: 0;
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(0,0,0,.8);
 
 }
-.fd-form{position:relative; z-index: 2;}
+.fd-form{
+    position:relative; 
+    z-index: 2;
+}
+
 .fd-form h1{
-    font-size: 32px; color: #fff;
+    font-size: 32px; 
+    color: #fff;
     text-align: center;
     padding-bottom: 15px;
     margin-bottom: 60px;
 }
-.int-area{
-    width: 400px; position: relative;
-    margin-top: 20px;
+.int-area,
+.int-area2 {
+  width: 100%;
+  width: 300px; /* Make inputs full width on mobile */
+  position: relative;
+  margin-top: 20px;
 }
-.int-area2{
-    width: 400px; position: relative;
-    margin-top: 20px;
-}
+
 .int-area:first-child{margin-top: 0;}
 .int-area2:first-child{margin-top: 0;}
 .int-area input{
@@ -160,3 +169,60 @@ button:hover{
     25% { transform: translateX(8px); } /* 25% 시점에서 x축으로 8px 이동 */
     50% { transform: translateX(-8px); } /* 50% 시점에서 x축으로 -8px 이동 */
     75% { transform: translateX(8px); } }
+
+@media screen and (max-width: 480px ){
+    
+
+    /* Add styles for tablets and larger screens here */
+    .int-area,
+    .int-area2 {
+        width: 700px;
+    }
+
+    .fd-form h1{
+        font-size: 70px;
+    }
+    .int-area input,
+    .int-area2 input {
+        font-size: 50px;
+        padding: 70px 10px 10px;
+    }
+    .int-area label,
+    .int-area2 label {
+        font-size: 50px;
+        top: 45px;
+    }
+    .int-area input:focus + label{
+        top: -2px;
+        font-size: 30px;color: #00DFA2;
+    }
+    .int-area2 input:focus + label{
+        top: -2px;
+        font-size: 30px;color: #00DFA2;
+    }
+    .int-area input:valid + label {
+        top: -1px;
+        font-size: 30px;color: #00DFA2;
+    }
+    .int-area2 input:valid + label {
+        top: -2px;
+        font-size: 30px;color: #00DFA2;}
+        
+    .btn-area{margin-top: 60px; padding-bottom: 40px;}
+    .btn-area button{
+        font-size: 50px;
+        height: 100px;
+        border-radius:50px ;
+
+    }
+    #feedbackSentMessage{
+        font-size: 50px;
+    }
+    .btn-10{
+        font-size: 40px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    }
+
+    }
+      
